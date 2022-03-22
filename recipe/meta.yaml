@@ -11,7 +11,7 @@ source:
   sha256: aeea3bd08f47fcfe3b301f1190928dec482938956a1ab8ba568851deed94bda5
 
 build:
-  number: 2
+  number: 3
   script: {{ PYTHON }} -m pip install . -vv
   skip: true  # [win]
   rpaths:
