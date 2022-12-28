@@ -30,12 +30,11 @@ requirements:
   host:
     - pip
     - python
-    - pytorch >=1.9
+    - pytorch
   run:
     - python
     - numpy
     - torchvision >=0.10.0
-    - {{ pin_compatible('pytorch', max_pin='x.x.x') }}
 
 test:
   imports:
