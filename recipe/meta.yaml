@@ -1,17 +1,15 @@
-{% set name = "norse" %}
 {% set version = "0.0.7.post1" %}
 
-
 package:
-  name: {{ name|lower }}
+  name: norse
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/norse-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/n/norse/norse-{{ version }}.tar.gz
   sha256: aeea3bd08f47fcfe3b301f1190928dec482938956a1ab8ba568851deed94bda5
 
 build:
-  number: 5
+  number: 6
   script: {{ PYTHON }} -m pip install . -vv
   skip: true  # [win]
   rpaths:
@@ -30,12 +28,11 @@ requirements:
   host:
     - pip
     - python
-    - pytorch >=1.9
+    - pytorch
   run:
     - python
     - numpy
     - torchvision >=0.10.0
-    - {{ pin_compatible('pytorch', max_pin='x.x.x') }}
 
 test:
   imports:
