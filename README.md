@@ -1,11 +1,11 @@
-About norse
-===========
+About norse-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/norse-feedstock/blob/main/LICENSE.txt)
 
 Home: http://github.com/norse/norse
 
 Package license: LGPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/norse-feedstock/blob/main/LICENSE.txt)
 
 Summary: A library for deep learning with spiking neural networks
 
