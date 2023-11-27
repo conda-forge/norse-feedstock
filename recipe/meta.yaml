@@ -9,7 +9,7 @@ source:
   sha256: 92f6bd0d97aa519ffcb605a25c4bda1ef1d949de8f87d0450eb1176ee7de69c9
 
 build:
-  number: 2
+  number: 3
   script: {{ PYTHON }} -m pip install . -vv
   skip: true  # [win]
   rpaths:
