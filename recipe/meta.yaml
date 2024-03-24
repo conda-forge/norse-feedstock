@@ -39,6 +39,7 @@ requirements:
     - numpy
     - pytorch
     - torchvision >=0.10.0
+    - nir
 
 test:
   imports:
