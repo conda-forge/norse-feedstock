@@ -35,8 +35,8 @@ requirements:
   run:
     - python
     - numpy
+    - pytorch 2.0.*
     - torchvision >=0.10.0
-    - transformers
 
 test:
   imports:
