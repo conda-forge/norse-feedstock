@@ -41,7 +41,7 @@ requirements:
     - torchvision >=0.10.0
     - nir
     - bindsnet
-    - matplotlib
+    - matplotlib-base
     - pytorch-lightning
     - pandas
     - nirtorch
