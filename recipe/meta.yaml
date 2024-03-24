@@ -40,6 +40,12 @@ requirements:
     - pytorch
     - torchvision >=0.10.0
     - nir
+    - bindsnet
+    - matplotlib
+    - pytorch-lightning
+    - pandas
+    - nirtorch
+    - h5py
 
 test:
   imports:
