@@ -36,6 +36,7 @@ requirements:
     - python
     - numpy
     - torchvision >=0.10.0
+    - transformers
 
 test:
   imports:
