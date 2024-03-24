@@ -1,4 +1,4 @@
-{% set version = "1.0.0" %}
+{% set version = "1.1.0" %}
 
 package:
   name: norse
@@ -6,10 +6,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/n/norse/norse-{{ version }}.tar.gz
-  sha256: 92f6bd0d97aa519ffcb605a25c4bda1ef1d949de8f87d0450eb1176ee7de69c9
+  sha256: 3f70b8579251316761f7a950680136029fcd9d92bbcc53531366d088a8aaf0c8
+  patches:
+    - fix-pytree.patch
 
 build:
-  number: 4
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   skip: true  # [win]
   rpaths:
@@ -35,7 +37,15 @@ requirements:
   run:
     - python
     - numpy
+    - pytorch
     - torchvision >=0.10.0
+    - nir
+    - bindsnet  # [py<310]
+    - matplotlib-base
+    - pytorch-lightning
+    - pandas
+    - nirtorch
+    - h5py
 
 test:
   imports:
