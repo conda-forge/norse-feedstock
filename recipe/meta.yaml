@@ -33,6 +33,7 @@ requirements:
   host:
     - pip
     - python
+    - setuptools
     - pytorch
   run:
     - python
