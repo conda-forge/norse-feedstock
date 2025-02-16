@@ -11,7 +11,7 @@ source:
     - fix-pytree.patch
 
 build:
-  number: 4
+  number: 5
   script: {{ PYTHON }} -m pip install . -vv
   skip: true  # [win]
   rpaths:
