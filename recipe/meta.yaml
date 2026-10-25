@@ -5,13 +5,13 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/n/norse/norse-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/n/norse/norse-{{ version }}.tar.gz
   sha256: 3f70b8579251316761f7a950680136029fcd9d92bbcc53531366d088a8aaf0c8
   patches:
     - fix-pytree.patch
 
 build:
-  number: 13
+  number: 14
   script: {{ PYTHON }} -m pip install . -vv
   skip: true  # [win]
   rpaths:
